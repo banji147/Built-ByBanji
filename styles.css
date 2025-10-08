@@ -606,3 +606,70 @@ footer{
   }
 }
 
+.reviews-section {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #111;
+  color: #fff;
+}
+
+.reviews-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #e50914;
+  margin-bottom: 40px;
+}
+
+.review-slider {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  overflow: hidden;
+  min-height: 160px;
+}
+
+.review {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.8s ease;
+  padding: 0 20px;
+}
+
+.review.active {
+  left: 0;
+  opacity: 1;
+}
+
+.review.prev {
+  left: -100%;
+  opacity: 0;
+}
+
+.review p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-style: italic;
+  color: #eee;
+}
+
+.review h4 {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #e50914;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .reviews-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .review p {
+    font-size: 1rem;
+  }
+}
+
+
