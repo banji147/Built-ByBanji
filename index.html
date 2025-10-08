@@ -112,31 +112,34 @@
   </section>
 
   
-  <section class="reviews-section">
-  <h2 class="section-title">What Clients Say</h2>
-  <div class="reviews-container">
-    <div class="review-card">
-      <h3>Jessica M.</h3>
-      <p class="review-text">
-        “BuiltByBanji helped me finally stay consistent with my training — my confidence and strength are at an all-time high!”
-      </p>
-      <div class="stars">★★★★★</div>
+  
+<section class="reviews-section">
+  <h2>What Our Clients Say</h2>
+  
+  <div class="review-slider">
+    <div class="review active">
+      <p>“Banji’s coaching completely transformed my fitness routine. I’ve never felt stronger!”</p>
+      <h4>— Sarah A.</h4>
+    </div>
+    
+    <div class="review">
+      <p>“Honestly didn’t expect the quality to be this good. The wrist wraps and belt I got from Lifvital feel premium — solid grip, no slipping. 10/10!”</p>
+      <h4>- Ken</h4>
     </div>
 
-    <div class="review-card">
-      <h3>David O.</h3>
-      <p class="review-text">
-        “The personalized plan worked wonders.”
-      </p>
-      <div class="stars">★★★★★</div>
+    <div class="review">
+      <p>“The workouts are challenging but effective, and the meal plans are realistic. 10/10.”</p>
+      <h4>— David K.</h4>
     </div>
 
-    <div class="review-card">
-      <h3>Amaka L.</h3>
-      <p class="review-text">
-        “It’s not just a workout plan — it’s a lifestyle change. The support and structure are top-tier!”
-      </p>
-      <div class="stars">★★★★★</div>
+    <div class="review">
+      <p>“Finally found gear that doesn’t rip after two weeks. The Lifvital knee sleeves gave my squats a serious upgrade.”</p>
+      <h4>— Dami</h4>
+    </div>
+
+    <div class="review">
+      <p>“BuiltByBanji kept me consistent and confident. I hit my body goals in just 10 weeks.”</p>
+      <h4>— Faith O.</h4>
     </div>
   </div>
 </section>
@@ -213,8 +216,21 @@
     }
   });
 </script>
+  <script>
+  const reviews = document.querySelectorAll('.review');
+  let current = 0;
+
+  function showNextReview() {
+    reviews[current].classList.remove('active');
+    current = (current + 1) % reviews.length;
+    reviews[current].classList.add('active');
+  }
+
+  setInterval(showNextReview, 5000);
+</script>
 
 </body>
 </html>
+
 
 
