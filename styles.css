@@ -274,7 +274,7 @@ footer{
 .about-section {
   position: relative;
   background: url('images/sully.jpeg') center/cover no-repeat;
-  height: 80vh; /* adjust height as needed */
+  height: 50vh; /* adjust height as needed */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -605,3 +605,4 @@ footer{
     margin: 0 0 10px 0;
   }
 }
+
