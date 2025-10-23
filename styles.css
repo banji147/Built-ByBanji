@@ -671,5 +671,73 @@ footer{
     font-size: 1rem;
   }
 }
+.contact-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: #111;
+  color: #fff;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #222;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #e50914;
+  outline: none;
+}
+
+.contact-form .btn {
+  background: #e50914;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form .btn:hover {
+  background: #ff1f2d;
+}
+
+.social-links {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 24px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+  color: #e50914;
+  transform: scale(1.2);
+}
+
+.social-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
 
 
